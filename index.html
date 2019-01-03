@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Izul Cyber Cafe</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script language="javascript" type="text/javascript" src="jquery.js"></script>
+	<script> // Jquery Equal Height Column 
+		function equalHeight(group) {
+			tallest = 0;
+			group.each(function() {
+				thisHeight = $(this).height();
+				if(thisHeight > tallest) {
+					tallest = thisHeight;
+				}
+			});
+			group.height(tallest);
+		}
+		$(document).ready(function() {
+			equalHeight($(".column"));
+		}); // End Jquery Equal Height Column 
+	</script>	
+</head>
+<body>
+	
+	<div id="container">
+	
+		<div id="header">
+		
+			<div id="menu">
+				<ul>
+					<li><a href="#" class="current"><span>Home</span></a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Menus</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			
+			<a href="#"><h1><!--Izul Cyber Cafe--></h1></a>
+			<p>The most comfortable coffee shop in the world</p>
+			
+		</div> <!-- End Header -->
+		
+		<div id="content">
+		
+			<div id="sidebar" class="column">
+				<h2>The Menyyyuu</h2>
+				<div class="product">
+					<img src="images/product1.jpg" />
+					<p class="product-title"> <a href="#">Capuchino</a> </p>
+				</div>
+				<div class="product">
+					<img src="images/product2.jpg" />
+					<p class="product-title"> <a href="#">Coffe Mate</a> </p>
+				</div>
+				<div class="product">
+					<img src="images/java.jpg" />
+					<p class="product-title"> <a href="#">Java Coffe</a> </p>
+				</div>
+			</div> <!-- End Sidebar -->
+			
+			<div id="main" class="column">
+				
+				<div id="welcome">
+					<h2>Halaa Welcome</h2>
+					<div>
+						<img src="images/owner.png" />
+						<p>Hallow...Selamat datang di warung kopi terbaik, ternyaman dan terlengkap didunia</p>
+						<p>Kami akan menyuguhkan secangkir kopi untuk anda, kami yakin anda akan menambah</p>
+						<p align="right">owner - <b>Izul Chaniago</b></p>
+					</div>
+				</div> <!-- End Welcome -->
+				
+				<div id="recent-news">
+					<h2>Latest News (Demo)</h2>
+					<div class="post">
+						<h2><a href="#">Felis at pharetra accumsan</a></h2>
+						<p class="meta">Written by Izul Chaniago | 10 December 2011</p>
+						<img src="images/big.png" />
+						<p>Quisque ultricies, felis at pharetra accumsan, nunc nisl ullamcorper dolor, rhoncus suscipit nibh massa ac purus. Quisque convallis, purus a blandit adipiscing, metus erat vulputate ipsum... <span class="more"><a href="#">Read more</a></span></p>
+					</div>
+				
+					<div class="post">
+						<h2><a href="#">Felis at pharetra accumsan</a></h2>
+						<p class="meta">Written by Izul Chaniago | 10 December 2011</p>
+						<img src="images/post1.jpg" />
+						<p>Nunc nisl ullamcorper dolor Quisque ultricies, felis at pharetra accumsan, nunc nisl ullamcorper dolor, rhoncus suscipit nibh massa ac purus. Quisque convallis, purus a blandit adipiscing, metus erat vulputate ipsum... <span class="more"><a href="#">Read more</a></span></p>
+					</div>
+					<p class="product-title"><a href="#">View All</a></p>
+				</div> <!-- End Recent News -->
+			</div> <!-- End Main -->
+			
+		</div> <!-- End Content -->
+		
+		<div id="footer">
+		
+			<div id="footer-menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Menus</a></li>
+					<li><a href="#">Photos</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</div> <!-- End Footer Menu -->
+			
+			<div id="copyright">
+				Copyright &copy; 2011 | Designed by <span><a href="http://izulcybercafe.com">Izul Cyber Cafe</a></span>
+			</div> <!-- End Copyright -->
+			
+		</div> <!-- End Footer -->
+		
+	</div> <!-- End Container -->
+	
+</body>	
+</html>
